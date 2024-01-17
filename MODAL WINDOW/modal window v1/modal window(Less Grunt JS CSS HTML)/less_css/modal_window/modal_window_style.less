@@ -3,7 +3,6 @@
 
 .modal_style() {
     .modal {
-        .position-center(fixed);
         display: none;
     }
     .modal-show {
@@ -11,7 +10,8 @@
         width: 100%;
     }
     .modal-window {
-        z-index: 1;
+        .position-center(fixed);
+        z-index: 2;
         border-radius: 20px;
         width: 550px;
         box-shadow: 0 10px 15px rgba(0,0,0, .4);
