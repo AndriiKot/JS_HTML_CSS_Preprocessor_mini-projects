@@ -4,9 +4,6 @@ const buttonCloseModalWindow = document.querySelector('.modal-window__btn-close'
 const modalWindow = document.querySelector('.modal');
 const backgroundModalWindow = document.querySelector('.overlay');
 
-console.log(backgroundModalWindow)
-
-
 const addOrRemoveClass = (element,method,className) => {
     element.classList[method](className)
 };
@@ -15,12 +12,10 @@ const closeModalWindow = () => {
     addOrRemoveClass(modalWindow,'remove','modal-show')
 };
 
-buttonShowModalWindow.addEventListener('click', () => {
-    addOrRemoveClass(modalWindow,'add','modal-show')
-});
+const showModalWindow = () => {
+    addOrRemoveClass(modalWindow,'add','modal-show')  
+};
 
-buttonCloseModalWindow.addEventListener('click', () => {
-    addOrRemoveClass(modalWindow,'remove','modal-show')
-});
-
+buttonShowModalWindow.addEventListener('click', showModalWindow);
+buttonCloseModalWindow.addEventListener('click', closeModalWindow);
 backgroundModalWindow.addEventListener('click', closeModalWindow );
