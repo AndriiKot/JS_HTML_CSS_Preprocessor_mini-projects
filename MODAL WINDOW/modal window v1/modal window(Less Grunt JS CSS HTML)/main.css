@@ -213,8 +213,8 @@ body {
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  background-color: #0b0b0b;
-  opacity: 1;
+  background-color: #000;
+  opacity: 0.5;
   min-width: 100%;
   min-height: 100vh;
   z-index: 1;
