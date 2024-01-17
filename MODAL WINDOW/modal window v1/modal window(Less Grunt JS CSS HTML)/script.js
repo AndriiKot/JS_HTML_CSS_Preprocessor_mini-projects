@@ -1,17 +1,17 @@
 ﻿
-const buttonModalWindow = document.querySelector('.btn-show__modal_widow');
+const buttonShowModalWindow = document.querySelector('.btn-show__modal_widow');
 const buttonCloseModalWindow = document.querySelector('.modal-window__btn-close');
 const modalWindow = document.querySelector('.modal')
 
 
-const showModalWindow = (_event,element = modalWindow) => {
-    element.classList.add('modal-show')
-};
+const addOrRemoveClass = (element,method,className) => {
+    element.classList[method](className)
+}
 
-const hiddenModalWindow = (_event,element = modalWindow) => {
-    element.classList.remove('modal-show')
-};
+buttonShowModalWindow.addEventListener('click', () => {
+    const showModalWindow = addOrRemoveClass(modalWindow,'add','modal-show')
+});
 
-buttonModalWindow.addEventListener('click', showModalWindow)
-buttonCloseModalWindow.addEventListener('click', hiddenModalWindow)
-
+buttonCloseModalWindow.addEventListener('click', () => {
+    const hiddenModalWindow = addOrRemoveClass(modalWindow,'remove','modal-show')
+});
