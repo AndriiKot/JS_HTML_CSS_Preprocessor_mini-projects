@@ -203,3 +203,17 @@ body {
 .modal-window__btn-close:hover {
   opacity: 0.7;
 }
+.overlay {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #0b0b0b;
+  opacity: 1;
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: 100;
+  animation-name: move-down;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
