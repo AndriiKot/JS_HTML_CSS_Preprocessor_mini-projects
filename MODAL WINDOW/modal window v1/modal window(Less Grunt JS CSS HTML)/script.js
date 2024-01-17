@@ -9,9 +9,9 @@ const addOrRemoveClass = (element,method,className) => {
 }
 
 buttonShowModalWindow.addEventListener('click', () => {
-    const showModalWindow = addOrRemoveClass(modalWindow,'add','modal-show')
+    addOrRemoveClass(modalWindow,'add','modal-show')
 });
 
 buttonCloseModalWindow.addEventListener('click', () => {
-    const hiddenModalWindow = addOrRemoveClass(modalWindow,'remove','modal-show')
+    addOrRemoveClass(modalWindow,'remove','modal-show')
 });
