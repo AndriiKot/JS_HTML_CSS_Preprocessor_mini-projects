@@ -155,8 +155,8 @@ body {
   font-family: 'Arial';
   font-size: 16px;
   color: #fff;
-  min-width: 320px;
-  height: 700svh;
+  min-width: 100%;
+  min-height: 100svh;
   overflow-x: hidden;
 }
 .btn-show__modal_widow {
